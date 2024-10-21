@@ -1,0 +1,140 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edba39; /* Gold background */
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 1em;
+  margin: 0;
+  color: #333; /* Dark gray text */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  /* Removed for Bootstrap layout */
+}
+
+nav {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.nav-link.active {
+  background-color: #203366; /* Darker blue for active button */
+  color: #fff; /* White text for active button */
+}
+
+section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff; /* White background for sections */
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Dark gray text */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #3f51b5; /* Blue for submit button */
+  color: #fff; /* White text for submit button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.map {
+  flex-basis: 50%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  height: 300px;
+}
+
+/* Style the student timetable section */
+#student-timetable {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* Show the student timetable section when active */
+.active #student-timetable {
+  display: block;
+}
+
+/* Form styling within the section */
+#student-timetable form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#student-timetable .form-group {
+  display: flex;
+  align-items: center;
+}
+
+#student-timetable label {
+  flex: 0 0 20%;
+}
+
+#student-timetable input[type="text"],
+#student-timetable input[type="file"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 252pt;
+  max-height: 252pt;
+}
